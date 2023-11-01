@@ -1,15 +1,14 @@
 @media (max-width: 768px) {
-    #calculator {
-      background-color: black;
-      width: auto;
-      padding: auto;
-      margin: auto;
-      border: dashed white 5px;
-    }
+  #calculator {
+    width: auto;
+    padding: auto;
+    margin: 15px;
+    border: solid white 5px;
+  }
 
-    body {
-        margin: 0;
-        padding: 0;
+  body {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,28 +18,27 @@
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 30px;
     text-decoration: underline;
-    font-weight: bold;
     font-style: italic;
     margin-bottom: 1em;
-    color: white;
+    color: rgb(31, 150, 241);
     text-align: center;
   }
 
   #display {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
   }
 
   #input-box {
     width: 80%;
-    color:white;
-    background-color:black;
-    border:solid silver 3px;
+    color: rgb(3, 253, 3);
+    background-color: black;
+    border: solid rgb(3, 253, 3);
     padding: 15px;
     text-align: right;
     font-size: 1.5em;
@@ -58,46 +56,51 @@
   #btn9,
   #btn0,
   #btnDot {
-    border: 1px solid silver;
+    border: 1px solid white;
     padding: 10px;
+    color: black;
     width: 30%;
     margin: 1%;
     font-size: 1.5em;
-    background-color: #fff;
+    background-color: white;
+  }
+
+  #btnDot {
+    color: red;
   }
 
   #btnAdd,
   #btnSubtract,
   #btnMultiply,
   #btnDivide {
-    border: 1px solid silver;
+    border: 1px solid white;
+    color: red;
     padding: 10px;
     width: 30%;
     margin: 1%;
     font-size: 1.5em;
-    background-color: #f9f9f9;
+    background-color: white;
   }
 
   #btnEqual {
-    border: 1px solid #ccc;
+    border: 1px solid white;
     padding: 10px;
     width: 30%;
     margin: 1%;
     font-size: 1.5em;
-    background-color: #4caf50;
-    color: silver;
+    background-color: rgb(3, 253, 3);
+    color: white;
   }
 
   #btnClear {
-    border: 1px solid #ccc;
+    border: 1px solid white;
     padding: 10px;
     width: 30%;
     margin: 1%;
     font-size: 1.5em;
-    background-color: #f44336; 
-    color: silver;
+    background-color: #f44336;
+    color: white;
   }
-
 
   #buttons {
     display: flex;
@@ -116,12 +119,32 @@
   }
 
   #btnClear {
-    border: solid white 3px;
+    border: solid black 3px;
+    font-size: 35px;
     color: white;
+    margin: 10px;
+  }
+
+  #btnClear:hover {
+    color:blue;
   }
 
   #btnEqual {
-    border: solid white 3px;
-    font-size: 35px;
+    border: solid black 3px;
+    color: black;
+    background-color:rgb(3, 253, 3);
+    font-size: 45px;
+    margin: 8px;
   }
+
+  a {
+    color:rgb(3, 253, 3);
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    font-size:30px;
+    width:91%;
+    border:solid rgb(3, 253, 3)3px;
+  }
+
 }
