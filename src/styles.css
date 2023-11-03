@@ -4,7 +4,7 @@
   width: 55%; /* Adjusted for larger screens */
   margin: 20px auto; /* Center the calculator */
   border: solid white 5px;
-  background-image: url("/background.jpg");
+  background-image: url("../background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -13,7 +13,7 @@ body {
   background-color: black;
   width: 100%;
   padding: 50px;
-  background-image: url("/background.jpg");
+  background-image: url("../background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -21,7 +21,7 @@ body {
 #display {
   display: flex;
   flex-direction: column;
-  background-image: url("/background.jpg");
+  background-image: url("../background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -45,7 +45,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url("/background.jpg");
+  background-image: url("../background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 25%;
@@ -57,7 +57,7 @@ body {
   display: flex;
   flex-direction: row;
   border: solid white 4px;
-  background-image: url("/background.jpg");
+  background-image: url("../background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-around; /* Space out buttons more evenly */
@@ -169,7 +169,7 @@ h1 {
   #calculator {
     display: flex;
     flex-direction: column;
-    background-image: url("/background.jpg");
+    background-image: url("../background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
@@ -191,7 +191,7 @@ h1 {
     align-items: center;
     justify-content: center;
     font-family: "Arial", sans-serif;
-    background-image: url("/background.jpg");
+    background-image: url("../background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -310,7 +310,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-image: url("/background.jpg");
+    background-image: url("../background.jpg");
   }
 
   button {
@@ -333,7 +333,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url("/background.jpg");
+    background-image: url("../background.jpg");
   }
 
   #btnClear {
