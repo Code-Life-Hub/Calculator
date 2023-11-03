@@ -1,9 +1,186 @@
+#calculator {
+  display: flex;
+  min-height: 770px;
+  width: 55%; /* Adjusted for larger screens */
+  margin: 20px auto; /* Center the calculator */
+  border: solid white 5px;
+  background-image: url("/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-color: black;
+  width: 100%;
+  padding: 50px;
+  background-image: url("/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#input-box {
+  width: 90%;
+  color: rgb(3, 253, 3);
+  background-color: black;
+  border: solid rgb(3, 253, 3) 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+#cntrl-btns {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 25%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  border: solid white 4px;
+  background-image: url("/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-around; /* Space out buttons more evenly */
+  flex-wrap: wrap;
+}
+
+button {
+  border: solid black 2px;
+  padding: 15px; /* Slightly larger padding */
+  color: black;
+  width: 22%; /* Adjusted for larger screens */
+  margin: 10px;
+  font-size: 2em; /* Larger font size */
+  background-color: white;
+}
+
+button:hover {
+  transform: scale(1.1);
+  color: rgb(15, 15, 252);
+}
+
+#btnDot,
+#btnAdd,
+#btnSubtract,
+#btnMultiply,
+#btnDivide {
+  color: red;
+  border: solid black 2px;
+}
+
+#btnDot:hover {
+  color: rgb(15, 15, 252);
+}
+
+#btnAdd:hover {
+  color: rgb(15, 15, 252);
+}
+
+#btnSubtract:hover {
+  color: rgb(15, 15, 252);
+}
+
+#btnMultiply:hover {
+  color: rgb(15, 15, 252);
+}
+
+#btnDivide:hover {
+  color: rgb(15, 15, 252);
+}
+
+#btnEqual {
+  background-color: #4caf50;
+  width: auto;
+  color: white;
+}
+
+#btnClear {
+  background-color: #9c1309;
+  width: auto;
+  color: white;
+}
+
+#btnClear:hover {
+  color: black;
+  background-color: #f44336;
+  border: solid black 1px;
+}
+
+#btnEqual:hover {
+  color: black;
+  border: solid black 1px;
+  background-color: rgb(3, 253, 3); /* Slightly different hover effect */
+}
+
+footer {
+  text-align: center;
+  margin-top: 35px;
+}
+
+a {
+  color: rgb(3, 253, 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-left: 6px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 10px;
+
+  width: auto;
+  border-left: solid white 2px;
+}
+
+h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  font-style: italic;
+  margin-bottom: 1em;
+  color: white;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   #calculator {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: auto;
     padding: auto;
     margin: 15px;
     border: solid white 5px;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+    color: rgb(15, 15, 252);
   }
 
   body {
@@ -13,8 +190,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
     font-family: "Arial", sans-serif;
+    background-image: url("/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   h1 {
@@ -22,7 +201,7 @@
     text-decoration: underline;
     font-style: italic;
     margin-bottom: 1em;
-    color: rgb(31, 150, 241);
+    color: rgb(253, 5, 5);
     text-align: center;
   }
 
@@ -40,6 +219,7 @@
     background-color: black;
     border: solid rgb(3, 253, 3);
     padding: 15px;
+    margin-top: 20px;
     text-align: right;
     font-size: 1.5em;
     margin-bottom: 1em;
@@ -54,8 +234,7 @@
   #btn7,
   #btn8,
   #btn9,
-  #btn0,
-  #btnDot {
+  #btn0 {
     border: 1px solid white;
     padding: 10px;
     color: black;
@@ -65,14 +244,51 @@
     background-color: white;
   }
 
-  #btnDot {
-    color: red;
+  #btn1:hover {
+    color: rgb(15, 15, 252);
+  }
+
+  #btn2:hover {
+    color: rgb(15, 15, 252);
+  }
+
+  #btn3:hover {
+    color: rgb(15, 15, 252);
+  }
+
+  #btn4:hover {
+    color: rgb(15, 15, 252);
+  }
+
+  #btn5:hover {
+    color: rgb(15, 15, 252);
+  }
+
+  #btn6:hover {
+    color: rgb(15, 15, 252);
+  }
+
+  #btn7:hover {
+    color: rgb(15, 15, 252);
+  }
+
+  #btn8:hover {
+    color: rgb(15, 15, 252);
+  }
+
+  #btn9:hover {
+    color: rgb(15, 15, 252);
+  }
+
+  #btn0:hover {
+    color: rgb(15, 15, 252);
   }
 
   #btnAdd,
   #btnSubtract,
   #btnMultiply,
-  #btnDivide {
+  #btnDivide,
+  #btnDot {
     border: 1px solid white;
     color: red;
     padding: 10px;
@@ -83,39 +299,41 @@
   }
 
   #btnEqual {
-    border: 1px solid white;
-    padding: 10px;
-    width: 30%;
-    margin: 1%;
-    font-size: 1.5em;
-    background-color: rgb(3, 253, 3);
+    border: solid black 3px;
+    font-size: 35px;
+    width: 35%;
     color: white;
-  }
-
-  #btnClear {
-    border: 1px solid white;
-    padding: 10px;
-    width: 30%;
-    margin: 1%;
-    font-size: 1.5em;
-    background-color: #f44336;
-    color: white;
+    margin: 10px;
   }
 
   #buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url("/background.jpg");
   }
 
   button {
     width: 48%;
     margin: 1%;
   }
+  #btnClear:hover {
+    color: black;
+    background-color: #f44336;
+    border: solid white 1px;
+  }
+
+  #btnEqual:hover {
+    color: black;
+    border: solid white 1px;
+    background-color: rgb(3, 253, 3); /* Slightly different hover effect */
+  }
 
   #cntrl-btns {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    background-image: url("/background.jpg");
   }
 
   #btnClear {
@@ -123,28 +341,21 @@
     font-size: 35px;
     color: white;
     margin: 10px;
-  }
-
-  #btnClear:hover {
-    color:blue;
-  }
-
-  #btnEqual {
-    border: solid black 3px;
-    color: black;
-    background-color:rgb(3, 253, 3);
-    font-size: 45px;
-    margin: 8px;
+    width: 35%;
   }
 
   a {
-    color:rgb(3, 253, 3);
-    text-align:center;
-    margin:0px;
-    padding:0px;
-    font-size:30px;
-    width:91%;
-    border:solid rgb(3, 253, 3)3px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-left: 6px;
+    margin-right: 10px;
+    margin-top: 105px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    width: 90%;
+    border: solid rgb(3, 253, 3) 3px;
   }
-
 }
+/* -------------------- MOBILE ENDS HERE --------------------------- */
